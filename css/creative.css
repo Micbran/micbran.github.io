@@ -10709,6 +10709,186 @@ header.mastheadCalc h1 {
   }
 }
 
+header.mastheadAng {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 72px);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url("../img/portfolio/fullsize/Anguished-Skill.JPG");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/portfolio/fullsize/Anguished-Skill.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.mastheadAng h1 {
+  font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+  header.mastheadAng {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 72px;
+    padding-bottom: 0;
+  }
+  header.mastheadAng p {
+    font-size: 1.15rem;
+  }
+  header.mastheadAng h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.mastheadAng h1 {
+    font-size: 3.5rem;
+  }
+}
+
+header.mastheadAss {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 72px);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url("../img/portfolio/fullsize/Assembly.JPG");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/portfolio/fullsize/Assembly.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.mastheadAss h1 {
+  font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+  header.mastheadAss {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 72px;
+    padding-bottom: 0;
+  }
+  header.mastheadAss p {
+    font-size: 1.15rem;
+  }
+  header.mastheadAss h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.mastheadAss h1 {
+    font-size: 3.5rem;
+  }
+}
+
+header.mastheadGal {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 72px);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url("../img/calcBack.JPG");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/calcBack.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.mastheadGal h1 {
+  font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+  header.mastheadGal {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 72px;
+    padding-bottom: 0;
+  }
+  header.mastheadGal p {
+    font-size: 1.15rem;
+  }
+  header.mastheadGal h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.mastheadGal h1 {
+    font-size: 3.5rem;
+  }
+}
+
+header.mastheadDar {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 72px);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url("../img/calcBack.JPG");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/calcBack.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.mastheadDar h1 {
+  font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+  header.mastheadDar {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 72px;
+    padding-bottom: 0;
+  }
+  header.mastheadDar p {
+    font-size: 1.15rem;
+  }
+  header.mastheadDar h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.mastheadDar h1 {
+    font-size: 3.5rem;
+  }
+}
+
+header.mastheadWor {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 72px);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url("../img/calcBack.JPG");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/calcBack.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.mastheadWor h1 {
+  font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+  header.mastheadWor {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 72px;
+    padding-bottom: 0;
+  }
+  header.mastheadWor p {
+    font-size: 1.15rem;
+  }
+  header.mastheadWor h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.mastheadWor h1 {
+    font-size: 3.5rem;
+  }
+}
+
 header.masthead h1 {
   font-size: 2.25rem;
 }
