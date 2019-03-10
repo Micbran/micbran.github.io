@@ -10684,6 +10684,31 @@ header.mastheadCalc {
   background-size: cover;
 }
 
+header.mastheadCalc h1 {
+  font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+  header.mastheadCalc {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 72px;
+    padding-bottom: 0;
+  }
+  header.mastheadCalc p {
+    font-size: 1.15rem;
+  }
+  header.mastheadCalc h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.mastheadCalc h1 {
+    font-size: 3.5rem;
+  }
+}
+
 header.masthead h1 {
   font-size: 2.25rem;
 }
