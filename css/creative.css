@@ -10965,7 +10965,7 @@ header.masthead h1 {
   opacity: 1;
 }
 
-#hyperlinkFix {
+.hyperlinkFix {
     a {
         color: #ccccff;
     }
