@@ -10964,3 +10964,22 @@ header.masthead h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
+
+#hyperlinkFix {
+
+    a:link {
+        color: #ffffff
+    }
+
+    a:visited {
+        color: #ccccff
+    }
+
+    a:hover {
+        color: #cc99ff
+    }
+
+    a:active {
+        color: #9999ff
+    }
+}
