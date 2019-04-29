@@ -10967,22 +10967,22 @@ header.masthead h1 {
 
 #hyperlinkFix {
     a {
-        color: #ccccff
+        color: #ccccff;
     }
-    
+
     a:link {
-        color: #ffffff
+        color: #ffffff;
     }
 
     a:visited {
-        color: #ccccff
+        color: #ccccff;
     }
 
     a:hover {
-        color: #cc99ff
+        color: #cc99ff;
     }
 
     a:active {
-        color: #9999ff
+        color: #9999ff;
     }
 }
