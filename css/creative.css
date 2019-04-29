@@ -10966,7 +10966,10 @@ header.masthead h1 {
 }
 
 #hyperlinkFix {
-
+    a {
+        color: #ccccff
+    }
+    
     a:link {
         color: #ffffff
     }
