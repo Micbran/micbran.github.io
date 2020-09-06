@@ -89,7 +89,7 @@
         <div class="col-lg-8 text-center">
           <h2 class="font-weight-bold mt-0" style="color: #000000">Video Demonstration</h2>
           <hr class="divider light my-4" style="border-color: #090909">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/D1c7BcdMBBI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/2mgnfMMVYrc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -99,10 +99,17 @@
   <section class="page-section bg-primary" id="design">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2 class="text-white font-weight-bold mt-0">Design</h2>
+        <div class="col-lg-8">
+          <h2 class="text-white font-weight-bold mt-0" style="text-align: center">Design Process</h2>
           <hr class="divider light my-4">
-          <p class="text-white-75 mb-4" style="color: #F5F5F5"></p>
+          <h3 class="text-white font-weight-bold mt-0">Numbers Balance</h3>
+          <p class="text-white-75 mb-4" style="color: #F5F5F5">Tales of Maj'eyal has many RPG elements, thus numbers are just about one of the most important things in the game. In order to come up with a baseline for what Anguished's numbers should look like, I took to the game's code and looked for abilities that were similar to abilities that I wanted to include in Anguished's kit. The nice thing about looking directly at the code was that the scaling formulas used for the abilities were directly shown to me. When I was writing the actual code for Anguished, I borrowed a lot of these scaling formulas, helping keep the class in line with the rest of the game's classes. It was a safe, assumption-based approach but it worked.</p>
+
+          <h3 class="text-white font-weight-bold mt-0">Mechanics Balance</h3>
+          <p class="text-white-75 mb-4" style="color: #F5F5F5">Tales of Maj'eyal, a tactical, grid-based, turn-based game, has combat that is far more complex than just who has the biggest numbers. I wanted to Anguished to be more than just a "dump all status effects and leave" style of play, so I had to once again, look to the game's existing content in order to construct a fun and flavorful kit that rewarded tactical usage of abilities and management of resources/cooldowns. To accomplish this, I broke down classes similar to what I wanted Anguished to be like in a design document and "reconstructed" bits of them back together, grabbing the functionality I wanted. General outline in hand, I took the reconstructed bits and made them unique and added a few self-written ones to fill the gaps of functionality I had.</p>
+
+          <h3 class="text-white font-weight-bold mt-0">Play-testing</h3>
+          <p class="text-white-75 mb-4" style="color: #F5F5F5">A lot of people will tell you that play-testing is one of the most important phases... and I'm inclined to agree with them. I learned more from watching people play the class and discuss the abilities it had than I did from all the research of the existing classes in the game. I learned quickly that if I wanted to make the class fun and interesting and most of all, have people want to play it, I had to emphasize what was fun about it. When I was play-testing and tweaking things, I began to lean on the aggressive side of changes, often making very large changes (both in numbers and mechanics) to abilities, seeing that it was easier to gauge whether it was a good idea or not. It made it a lot easier to focus on what I wanted the class to be about, while still having basic abilities like damage reduction and healing be effective, but not important to the class (and thus take away from the theme).</p>
         </div>
       </div>
     </div>
@@ -115,7 +122,14 @@
         <div class="col-lg-8 text-center">
           <h2 class="font-weight-bold mt-0" style="color: #000000">Technical</h2>
           <hr class="divider light my-4" style="border-color: #090909">
-          <p class="text-white-75 mb-4" style="color: #000000"></p>
+          <p class="text-white-75 mb-4" style="color: #000000">Lua is an odd little language, and Lua hooked onto C++ through means of libraries is even stranger, so beware of these screenshots.</p>
+          <hr class="divider light my-4" style="border-color: #090909">
+          <img src="img/portfolio/fullsize/anguished-code-snippet-1.jpg" style="width: 100%">
+          <p class="text-white-75 mb-4" style="color: #000000">(To actually view the code I would suggest opening the image in a new tab or zooming in, this image was mostly to demonstrate size of a single talent). <br> One of the shorter talents in this file, this image shows the general layout of what one ability looks like. In the Anguished class, each talent is defined as a table with set properties, the main parts of a talent are the action function and info function. Everything else is either just a simple property or for organization/cleanliness, such as defining later calculated parts of the talent early. The action function holds everything the actual talent does, handling targeting, damage projection, and status effect projection.</p>
+          <hr class="divider light my-4" style="border-color: #090909">
+          <img src="img/portfolio/fullsize/anguished-code-snippet-2.jpg" style="width: 100%">
+          <p class="text-white-75 mb-4" style="color: #000000">Much like how talents are defined, status effects are tables as well. This image is the status effect that the previous example applies. A status effect's behavior is defined by its activate, deactivate and on_timeout (tick) functions. This one is a simple damage over time status effect (see on_timeout doing a damage projection), that gives the projector some of their casting resource back through use of a special damage type (DamageType.DRAIN_VIM). DamageTypes are exceedingly useful for getting the right talent behavior.</p>
+          <p class="text-white-75 mb-4" style="color: #000000">Through a combination of talent definitions, status effect definitions, DamageType definitions and reading a whole lot of engine code, I achieved the expected behavior for Anguished. It was very much a self-teaching process, as each error or question about how to do something meant going back and reading pre-existing code in the game. This gave me important exposure to the process of reading other people's code, a skill that is sadly often not emphasized in coursework.</p>
         </div>
       </div>
     </div>
