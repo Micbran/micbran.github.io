@@ -88,7 +88,7 @@
         <div class="col-lg-8 text-center">
           <h2 class="font-weight-bold mt-0" style="color: #000000">Video Demonstration</h2>
           <hr class="divider light my-4" style="border-color: #090909">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/2mgnfMMVYrc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/6SrHYJvYFr0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -117,14 +117,16 @@
         <div class="col-lg-8 text-center">
           <h2 class="font-weight-bold mt-0" style="color: #000000">Technical</h2>
           <hr class="divider light my-4" style="border-color: #090909">
-          <p class="text-white-75 mb-4" style="color: #000000"></p>
+          <p class="text-white-75 mb-4" style="color: #000000">Being intended as more of an "engine," the code is mostly framework and handling of very low level functions (like drawing onto the console). That being said, it still has a lot of interesting technical bits.</p>
           <hr class="divider light my-4" style="border-color: #090909">
           <img src="img/portfolio/fullsize/rl-engine-code-snippet-1.jpg" style="width: 100%">
-          <p class="text-white-75 mb-4" style="color: #000000"></p>
+          <p class="text-white-75 mb-4" style="color: #000000">Shown above is the Entity class definition, with all of it's possible components. Normally when I write code architecture, I think in a more object oriented style. Wanting to try something different, I went with the component-based model for this project. It has a couple of advantages, the biggest one being that it is very easy to change an Entity's components at run time and it cuts down a lot on having many different classes for each possible combination of use-cases. <br><br> Overall, a component-based system is far more robust and dynamic, which is really helpful for game development as games tend to change a lot they're being developed, nothing is really ever set in stone.</p>
           <hr class="divider light my-4" style="border-color: #090909">
           <img src="img/portfolio/fullsize/rl-engine-code-snippet-2.jpg" style="width: 100%">
-          <p class="text-white-75 mb-4" style="color: #000000"></p>
-          <p class="text-white-75 mb-4" style="color: #000000"></p>
+          <p class="text-white-75 mb-4" style="color: #000000">Above is a snippet of the extraction part of the event system. It makes use of a python dictionary (key-value pairs like a map) and new events are "appended" to the dictionary and extracted between turns, their results processed by their respective handlers. The best part of this, at least in my opinion, is that it helps keep code out of the input handlers (which uses a more libtcod based event system), keeping those much, much cleaner than they could be. This method is also very expandable, allowing new events and event handlers to be easily added.</p>
+          <hr class="divider light my-4" style="border-color: #090909">
+          <img src="img/portfolio/fullsize/rl-engine-code-snippet-5.jpg" style="width: 100%">
+          <p class="text-white-75 mb-4" style="color: #000000">Lastly, we have the targeting system code. It that isn't really super important to the engine's features, but I am oddly proud of it. This snippet grabs all viable entities within range, sorts them by closest to farthest and then allows the player to cycle between them. The cycle is accomplished in a simple way: pop the next entity off the top of the list and set it as targeted and then stick it at the back of the list. This makes the actual cycling process very painless and quick.</p>
         </div>
       </div>
     </div>
