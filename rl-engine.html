@@ -58,11 +58,11 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
-          <h1 class="text-uppercase text-white font-weight-bold">Libtcod Traditional Roguelike Engine</h1>
+          <h1 class="text-uppercase text-white font-weight-bold">Libtcod Traditional Roguelike "Engine"</h1>
           <hr class="divider my-4">
         </div>
         <div class="col-lg-8 align-self-baseline">
-          <p class="text-white-75 font-weight-light mb-5" style="color: #ffffff; opacity=1.0; font-size=1.33em; font-weight=bold;">Lorem Ipsum</p>
+          <p class="text-white-75 font-weight-light mb-5" style="color: #ffffff; opacity=1.0; font-size=1.33em; font-weight=bold;">Written in Python using libtcod (a computer console emulator library), this traditional roguelike engine has all the basic framework for a roguelike game. It's not a true engine in the sense of Unity or UE4 with a nice UI and a strong separation from "direct coding," but it instead has a framework that is easily hooked in to or built on top of.</p>
         </div>
       </div>
     </div>
@@ -73,9 +73,9 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
-          <h2 class="text-white mt-0"></h2>
+          <h2 class="text-white mt-0 font-weight-bold">Summary</h2>
           <hr class="divider light my-4">
-          <p class="text-white-75 mb-4" style="color: #F5F5F5">Lorem Ipsum</p>
+          <p class="text-white-75 mb-4" style="color: #F5F5F5">Partially based off of a <a style="color: #BBBBFF;" href="http://rogueliketutorials.com/tutorials/tcod/">tutorial</a> (some of the code and usage of the library was very bad or very outdated), I created an engine suited for traditional roguelikes. It includes features such as a basic event propagation and handling system, menus, inventory, rendering and has a simple component-based entity system.</p>
         </div>
       </div>
     </div>
@@ -101,14 +101,10 @@
         <div class="col-lg-8">
           <h2 class="text-white font-weight-bold mt-0" style="text-align: center">Design Process</h2>
           <hr class="divider light my-4">
-          <h3 class="text-white font-weight-bold mt-0">Lorem</h3>
-          <p class="text-white-75 mb-4" style="color: #F5F5F5">Lorem Ipsum</p>
-
-          <h3 class="text-white font-weight-bold mt-0">Lorem</h3>
-          <p class="text-white-75 mb-4" style="color: #F5F5F5">Lorem ipsum</p>
-
-          <h3 class="text-white font-weight-bold mt-0">Lorem</h3>
-          <p class="text-white-75 mb-4" style="color: #F5F5F5">Lorem Ipsum</p>
+          <p class="text-white-75 mb-4" style="color: #F5F5F5; text-align: center">There's not a lot of actual mechanics design in the engine (I wanted to focus on the engine, not the games it could make), but there are a few implications due to it's roguelike nature.</p>
+          <p class="text-white-75 mb-4" style="color: #F5F5F5; text-align: center">First, the game is set up in a grid-based, turn-based environment. The player takes their turn and then the AI takes its turn(s). This gives the player plenty of time to think about their next move, which is especially important under the context of a roguelike game, where character death is permanent and thus, dying means restarting.</p>
+          <p class="text-white-75 mb-4" style="color: #F5F5F5; text-align: center">Secondly, all level content (such as layout, enemy locations, item location) are a product procedural generation. This means that the game will be different in some way every play-through.</p>
+          <p class="text-white-75 mb-4" style="color: #F5F5F5; text-align: center">Lastly, it does have the start of a general RPG style stat system. This was mostly implemented so that I could test combat and leveling. The combat is entirely deterministic, but that's an easy function to change.</p>
         </div>
       </div>
     </div>
