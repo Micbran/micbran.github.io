@@ -89,7 +89,7 @@
         <div class="col-lg-8 text-center">
           <h2 class="font-weight-bold mt-0" style="color: #000000">Video</h2>
           <hr class="divider light my-4" style="border-color: #090909">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/2mgnfMMVYrc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="100%" height="500" src="https://www.youtube.com/embed/Wx0LPb2_P_E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -102,7 +102,7 @@
         <div class="col-lg-8">
           <h2 class="text-white font-weight-bold mt-0" style="text-align: center">Design</h2>
           <hr class="divider light my-4">
-          <p class="text-white-75 mb-4" style="color: #F5F5F5; text-align: center;">Swords & Shovels is an Action-RPG; games of this genre tend to have fairly light RPG elements and have fast and frentic combat. Though this tutorial was more for coding within Unity, there were still things left up to the implementer.<br> <br> I didn't want there to be too much inventory management, so I kept the number of items that could drop from enemies low -- you can get a health potion, a coin or nothing. The game also features semi-random wave spawning, to keep action constant. Leveling up is just an automatic increase to the player's stats, no extra choice needed. All of these design choices are intended to keep the gameplay focused on what I felt was the more important parts of the game. I also made a few adjustments to how the AI acquires the player as a target and altered their projectile to have a smaller hitbox with a slower speed, allowing you to actually dodge projectiles. I felt that dodging the projectile awarded the player for having good position and situational awareness, rather than just running straight at every enemy they see.</p>
+          <p class="text-white-75 mb-4" style="color: #F5F5F5; text-align: center;">Swords & Shovels is an Action RPG; games of this genre tend to have fairly light RPG elements and have fast and frentic combat. Though this tutorial was more for coding within Unity, there were still things left up to the implementer.<br> <br> I didn't want there to be too much inventory management, so I kept the number of items that could drop from enemies low -- you can get a health potion, a coin or nothing. The game also features semi-random wave spawning, to keep action constant. Leveling up is just an automatic increase to the player's stats, no extra choice needed. All of these design choices are intended to keep the gameplay focused on what I felt was the more important parts of the game. I also made a few adjustments to how the AI acquires the player as a target and altered their projectile to have a smaller hitbox with a slower speed, allowing you to actually dodge projectiles. I felt that dodging the projectile awarded the player for having good position and situational awareness, rather than just running straight at every enemy they see.</p>
         </div>
       </div>
     </div>
@@ -115,14 +115,14 @@
         <div class="col-lg-8 text-center">
           <h2 class="font-weight-bold mt-0" style="color: #000000">Technical</h2>
           <hr class="divider light my-4" style="border-color: #090909">
-          <p class="text-white-75 mb-4" style="color: #000000"></p>
-          <hr class="divider light my-4" style="border-color: #090909">
           <img src="img/portfolio/fullsize/s-and-s-code-snippet-1.jpg" style="width: 100%">
-          <p class="text-white-75 mb-4" style="color: #000000"></p>
+          <p class="text-white-75 mb-4" style="color: #000000">Around halfway into the tutorial, I really began to embrace the component style of coding. Each of the above scripts implement interfaces (either IAttackable or IDestructible), as I found interfaces very handy for allowing specific GameObjects to be treated in a more general way. The nice thing about this (at least from a code architecture standpoint) is that a.) level designers can combine interface scripts easily and in a more robust way to create unique behavior and b.) it keeps things as abstract as possible, making later code much, much easier to add. And it's not all in one file!</p>
           <hr class="divider light my-4" style="border-color: #090909">
           <img src="img/portfolio/fullsize/s-and-s-code-snippet-2.jpg" style="width: 100%">
-          <p class="text-white-75 mb-4" style="color: #000000"></p>
-          <p class="text-white-75 mb-4" style="color: #000000"></p>
+          <p class="text-white-75 mb-4" style="color: #000000">The mobs of the game are spawned with (mostly) the code shown above. I used a coroutine to get the nice stagger effect of spawns (terrifying when enemies pop in all at once). Enemy (mob) stats are instantiated from a scriptable object, allowing them to increase (or decrease) as waves go on (and the player level goes up) rather than being static. Otherwise, the code is fairly simple. Find a random spawnpoint (predefine GameObjects in the scene), select a random mob type and place it and give it a set of waypoints so that it eventually runs into the player.</p>
+          <hr class="divider light my-4" style="border-color: #090909">
+          <img src="img/portfolio/fullsize/s-and-s-code-snippet-3.jpg" style="width: 100%">
+          <p class="text-white-75 mb-4" style="color: #000000">Keeping on theme with showing off the enemies, this is their very basic AI. Patrol, called over and over with an InvokeRepeating, makes the mobs march to the next predefined waypoint in the level after a short delay. Every half second (the InvokeRepeating speed of Tick), there's a check to see if the player's close enough to them and if so... the mob gives chase, attacking once they're in range. Tick is more or less used as a less often called Update, since player detection doesn't need to be ultra-precise.</p>
         </div>
       </div>
     </div>
